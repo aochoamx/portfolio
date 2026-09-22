@@ -10,6 +10,12 @@
   --accent-light: #2dd4c6;
   --accent-2: #a78bfa;
   --highlight: #ff6b4a;
+
+  /* Aliases so the shared project-page styles resolve against this palette */
+  --blue-500: var(--accent);
+  --blue-400: var(--accent-light);
+  --cyan-400: var(--accent-2);
+  --amber-400: var(--highlight);
   --bg: #f6f8fb;
   --surface: #ffffff;
   --text: #14202e;
@@ -358,6 +364,7 @@ section {
 .hero-photo-frame img {
   border-radius: 20px;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
 }
@@ -556,6 +563,27 @@ section {
   background: #f5f2ff;
   border-left-color: #6d28d9;
 }
+
+/* ---------- Detail link on index cards ---------- */
+.project-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 14px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.project-title-row h3 { margin-bottom: 0; }
+.project-title-row h3 a { transition: color 0.15s ease; }
+.project-title-row h3 a:hover { color: var(--blue-500); }
+.detail-link {
+  flex: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--blue-500);
+  white-space: nowrap;
+}
+.detail-link:hover { text-decoration: underline; }
 
 /* ---------- Skills ---------- */
 .skills-grid {

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMEX App — Rail Operations Mobility | Antonio Ochoa</title>
+<meta name="description" content="Case study: migrating Ferromex's intermodal terminal operations from a desktop system to a handheld mobile app across 12 rail terminals. $200K budget, 9 months, delivered 2024–2025.">
+<link rel="canonical" href="simex-app.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://portfoliosf.aochoamx.workers.dev/simex-app">
+<meta property="og:title" content="SIMEX App — Rail Operations Mobility | Antonio Ochoa">
+<meta property="og:description" content="Migrating intermodal terminal operations from desktop to handheld mobile devices across 12 Ferromex rail terminals.">
+<meta property="og:image" content="https://portfoliosf.aochoamx.workers.dev/images/project-simex-rail.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AO</span>
+      <span class="brand-text">
+        <span class="brand-name">Antonio Ochoa</span>
+        <span class="brand-tag">Project Portfolio</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="index.html#profile">Profile</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#certifications">Certifications</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="Antonio-Ochoa-CV.pdf" class="btn btn-primary" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> <span class="btn-label">Download CV</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="pd-hero">
+  <div class="container">
+    <a href="index.html#projects" class="pd-back">← Back to projects</a>
+    <div class="pd-split">
+      <div>
+        <span class="pd-client"><img src="images/logo-grupo-mexico.png" alt="Grupo México Transportes">GMXT · Ferromex · Case study</span>
+        <h1>SIMEX App — <span class="accent">Rail Operations Mobility</span></h1>
+        <p class="lead">
+          Moving intermodal terminal operations off the desktop and onto handheld devices, so every
+          container movement is recorded where it happens: at the gate and at the train, across
+          Ferromex's 12 intermodal terminals.
+        </p>
+      </div>
+      <figure class="pd-figure pad">
+        <img src="images/simex-app-migration.png" alt="Illustration of a desktop application being migrated to a handheld mobile device" width="425" height="170">
+        <figcaption>From a fixed workstation to a rugged handheld device.</figcaption>
+      </figure>
+    </div>
+
+    <div class="pd-stats" style="margin-top:44px;">
+      <div class="pd-stat"><span class="num">$200K</span><span class="lbl">Budget (USD)</span></div>
+      <div class="pd-stat"><span class="num">9 months</span><span class="lbl">Duration</span></div>
+      <div class="pd-stat"><span class="num">12</span><span class="lbl">Intermodal terminals</span></div>
+      <div class="pd-stat"><span class="num">6</span><span class="lbl">Core team members</span></div>
+      <div class="pd-stat"><span class="num">2024–25</span><span class="lbl">Delivered</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="pd-section">
+  <div class="container">
+    <div class="pd-split">
+      <div class="pd-prose">
+        <span class="section-label">Overview</span>
+        <h2 class="section-title">From the back office to the terminal yard</h2>
+        <p>
+          Terminal staff recorded every <strong>In-Gate, Out-Gate, Train-Load and Train-Unload</strong>
+          event in SIMEX, a desktop application. Each movement had to be captured from a fixed
+          workstation, away from the container and the train it described.
+        </p>
+        <p>
+          The goal was to migrate these operations to a <strong>mobile app on handheld devices</strong>
+          and use the move to add what a desktop could not offer: photo evidence taken on the spot and
+          <strong>OCR recognition of container numbers</strong>.
+        </p>
+      </div>
+      <figure class="pd-figure pd-browser">
+        <div class="bar"><span></span><span></span><span></span></div>
+        <img src="images/simex-app-legacy-portal.jpg" alt="Screenshot of the legacy IMEX desktop system home screen with login and quick booking lookup" width="1454" height="899" loading="lazy">
+        <figcaption>Starting point: the legacy IMEX desktop system.</figcaption>
+      </figure>
+    </div>
+
+    <div class="pd-cards" style="margin-top:56px;">
+      <div class="pd-card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>The challenge</h3>
+        <p>Many stakeholders across 12 terminals and a combined software and hardware scope, with
+          operations that could not stop during the transition.</p>
+      </div>
+      <div class="pd-card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>The approach</h3>
+        <p>Signed-off analysis before any code, sprint delivery with user acceptance at every
+          sprint, and a controlled rollout with the legacy system running in parallel.</p>
+      </div>
+      <div class="pd-card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>My role</h3>
+        <p>Project Manager, responsible for end-to-end planning, budget, stakeholder alignment,
+          coordination of the analysis and development teams, and the go-live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPERATIONAL FLOW ============ -->
+<section class="pd-section alt">
+  <div class="container">
+    <span class="section-label">Scope</span>
+    <h2 class="section-title">Five terminal events, one mobile workflow</h2>
+    <p class="section-intro">
+      Analysis focused on the five events that move a container through an intermodal terminal,
+      and on the business rules each one must enforce.
+    </p>
+
+    <div class="pd-flow">
+      <div class="pd-flow-step">
+        <span class="step-tag">01 · Gate</span>
+        <h4>In-Gate</h4>
+        <ul>
+          <li>Valid waybill</li>
+          <li>Traffic type</li>
+          <li>Assigned terminal</li>
+          <li>Booking confirmed</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">02 · Planning</span>
+        <h4>Train consolidation</h4>
+        <ul>
+          <li>Route, origin and destination</li>
+          <li>Lots and traffic types</li>
+          <li>Compatible container types</li>
+          <li>Stowage rules</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">03 · Rail</span>
+        <h4>Train load</h4>
+        <ul>
+          <li>Date and time</li>
+          <li>User</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">04 · Rail</span>
+        <h4>Train unload</h4>
+        <ul>
+          <li>Date and time</li>
+          <li>Container-by-container</li>
+          <li>Or full-train unload</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">05 · Gate</span>
+        <h4>Out-Gate</h4>
+        <ul>
+          <li>Payments up to date</li>
+          <li>Unload previously recorded</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DELIVERY ============ -->
+<section class="pd-section">
+  <div class="container">
+    <span class="section-label">Delivery</span>
+    <h2 class="section-title">How the project was delivered</h2>
+    <p class="section-intro">
+      A hybrid lifecycle: predictive planning and formal sign-offs at the edges, agile sprints in the middle.
+    </p>
+
+    <div class="pd-phases" aria-hidden="true">
+      <div class="pd-phase"><span class="dot">1</span><strong>Initiation</strong><span>Plan &amp; baseline</span></div>
+      <div class="pd-phase"><span class="dot">2</span><strong>Analysis</strong><span>Workshops &amp; UX</span></div>
+      <div class="pd-phase"><span class="dot">3</span><strong>Development</strong><span>Sprints</span></div>
+      <div class="pd-phase"><span class="dot">4</span><strong>Testing</strong><span>End-to-end UAT</span></div>
+      <div class="pd-phase"><span class="dot">5</span><strong>Deployment</strong><span>12 terminals</span></div>
+      <div class="pd-phase"><span class="dot">6</span><strong>Hypercare</strong><span>Hours bank</span></div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 1</small>Initiation</div>
+      <div>
+        <p>Built a high-level, phased roadmap together with time, scope and cost estimates, which
+          became the baseline for the rest of the project.</p>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 2</small>Analysis &amp; design</div>
+      <div>
+        <p>With a contracted team of business analysts, I ran requirements workshops with Operations
+          to model the five terminal processes. The work then moved to the target state:</p>
+        <ul class="pd-checks">
+          <li><strong>To-be process models</strong> in BPMN, including exception paths.</li>
+          <li><strong>UX/UI screen design</strong> for handheld devices, reviewed and adjusted with end users.</li>
+          <li><strong>Mobile-native features:</strong> on-site photo capture and OCR recognition of container numbers.</li>
+        </ul>
+        <p>Everything was consolidated into a single analysis document, signed off by every
+          stakeholder, including the project sponsor.</p>
+        <figure class="pd-figure pad narrow">
+          <img src="images/simex-app-bpmn.png" alt="BPMN diagram of a cargo loading process with exception handling paths" width="829" height="479" loading="lazy">
+          <figcaption>Example of the BPMN notation used to model to-be processes, exception handling included.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 3</small>Development</div>
+      <div>
+        <p>The signed analysis was broken down into user stories in <strong>Jira</strong>, with a
+          development and testing schedule. The team delivered in sprints, and each sprint closed with
+          user acceptance testing, so issues surfaced early rather than at the end.</p>
+        <p>Before handing over to Operations, the team ran internal functional testing against a
+          structured test matrix.</p>
+        <figure class="pd-figure">
+          <div class="pd-table-wrap">
+            <table class="pd-table">
+              <thead>
+                <tr><th>ID</th><th>Module</th><th>Test scenario</th><th>Result</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>TC-001</td><td>In-Gate</td><td>Reject entry when the waybill is invalid</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-002</td><td>In-Gate</td><td>Register entry with a valid booking and assigned terminal</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-003</td><td>OCR</td><td>Container number read from a photo pre-fills the form</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-004</td><td>Consolidation</td><td>Block an incompatible container type on a train</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-005</td><td>Train unload</td><td>Unload a full train in a single action</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-006</td><td>Out-Gate</td><td>Block exit when payments are outstanding</td><td><span class="pd-status">Pass</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption>Illustrative excerpt showing the structure of the test matrix.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 4</small>Testing</div>
+      <div>
+        <p>Operations ran end-to-end user acceptance testing across the full workflow. Results were
+          documented in a test report formally signed off by Operations, and the requested adjustments
+          were applied before go-live.</p>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 5</small>Deployment</div>
+      <div>
+        <p>The rollout was designed to protect terminal operations at every step:</p>
+        <ul class="pd-checks">
+          <li><strong>On-site training</strong> for every user, with visits to the terminals.</li>
+          <li><strong>Controlled release</strong> across all 12 terminals on a planned cutover date.</li>
+          <li><strong>Parallel run:</strong> the legacy system stayed live alongside the new app.</li>
+          <li><strong>Go-live support:</strong> a dedicated team at headquarters and a 24/7 chat channel for
+            Operations, from cutover through the following week.</li>
+        </ul>
+        <figure class="pd-diagram">
+          <div class="pd-table-wrap">
+            <svg viewBox="0 0 980 280" role="img" aria-labelledby="rollout-title" style="min-width:680px;">
+              <title id="rollout-title">Rollout timeline: training, parallel run of the legacy system, go-live of SIMEX App, support window and post-launch hours bank</title>
+              <defs>
+                <linearGradient id="g-app" x1="0" x2="1">
+                  <stop offset="0" stop-color="#0ea5a0"/><stop offset="1" stop-color="#a78bfa"/>
+                </linearGradient>
+              </defs>
+              <g font-family="Inter, sans-serif" font-size="13" font-weight="600">
+                <!-- milestones -->
+                <line x1="300" y1="34" x2="300" y2="268" stroke="#ff6b4a" stroke-width="2" stroke-dasharray="5 5"/>
+                <line x1="600" y1="34" x2="600" y2="268" stroke="#7a8ba0" stroke-width="1.5" stroke-dasharray="5 5"/>
+                <text x="300" y="24" text-anchor="middle" fill="#ff6b4a" font-weight="700">Cutover</text>
+                <text x="600" y="24" text-anchor="middle" fill="#55677c">Cutover + 1 week</text>
+
+                <rect x="40" y="46" width="260" height="30" rx="8" fill="#e8f7f6"/>
+                <text x="54" y="66" fill="#0e7c78">On-site user training</text>
+
+                <rect x="40" y="92" width="560" height="30" rx="8" fill="#e4e9f1"/>
+                <text x="54" y="112" fill="#55677c">Legacy desktop system (parallel run)</text>
+
+                <rect x="300" y="138" width="640" height="30" rx="8" fill="url(#g-app)"/>
+                <text x="314" y="158" fill="#fff">SIMEX App live in 12 terminals</text>
+
+                <rect x="300" y="184" width="300" height="30" rx="8" fill="#efe9fe"/>
+                <text x="314" y="204" fill="#6d28d9">HQ support team + 24/7 chat</text>
+
+                <rect x="600" y="230" width="340" height="30" rx="8" fill="#fff" stroke="#0ea5a0" stroke-dasharray="4 4"/>
+                <text x="614" y="250" fill="#0e7c78">Hours bank for post-launch adjustments</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption>Rollout plan: no terminal depended on the new app alone until it had proven itself in production.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 6</small>Hypercare</div>
+      <div>
+        <p>A pre-approved bank of development hours was planned from the start to cover post-launch
+          adjustments, so fixes and refinements requested by the terminals did not require a new
+          procurement cycle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS & TECHNIQUES ============ -->
+<section class="pd-section alt">
+  <div class="container">
+    <span class="section-label">Tools &amp; techniques</span>
+    <h2 class="section-title">The toolkit behind the delivery</h2>
+    <p class="section-intro">Each stage of the project relied on its own set of proven techniques.</p>
+
+    <div class="pd-toolkit">
+      <div class="pd-tool-group">
+        <span class="step-tag">Analysis &amp; design</span>
+        <ul>
+          <li><strong>Requirements workshops</strong><span>Joint sessions with Operations to capture and validate each terminal process.</span></li>
+          <li><strong>Process modeling (BPMN)</strong><span>As-is and to-be models, exception paths included.</span></li>
+          <li><strong>UX/UI design</strong><span>Handheld screens reviewed and adjusted with end users before development.</span></li>
+        </ul>
+      </div>
+      <div class="pd-tool-group">
+        <span class="step-tag">Agile delivery</span>
+        <ul>
+          <li><strong>User stories in Jira</strong><span>Derived from the signed analysis document to keep scope traceable.</span></li>
+          <li><strong>Scrum sprints</strong><span>Incremental delivery against a development and testing schedule.</span></li>
+          <li><strong>Sprint-end UAT</strong><span>Users accepted every increment, so issues surfaced early.</span></li>
+        </ul>
+      </div>
+      <div class="pd-tool-group">
+        <span class="step-tag">Quality</span>
+        <ul>
+          <li><strong>Functional testing</strong><span>Internal test cycle before handing over to Operations.</span></li>
+          <li><strong>Test matrix</strong><span>Structured coverage of every module and business rule.</span></li>
+          <li><strong>End-to-end UAT sign-off</strong><span>Formal approval from Operations before go-live.</span></li>
+        </ul>
+      </div>
+      <div class="pd-tool-group">
+        <span class="step-tag">Rollout</span>
+        <ul>
+          <li><strong>Cutover planning</strong><span>Controlled release across 12 terminals on a set date.</span></li>
+          <li><strong>Parallel run</strong><span>Legacy system kept live as a fallback during adoption.</span></li>
+          <li><strong>Hypercare</strong><span>24/7 support channel plus a pre-approved hours bank.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pd-tools">
+      <h3>Technology</h3>
+      <div class="pill-row">
+        <span class="pill">Handheld mobile devices</span>
+        <span class="pill">OCR</span>
+        <span class="pill">.NET</span>
+        <span class="pill">SQL Server</span>
+        <span class="pill">Jira</span>
+      </div>
+    </div>
+
+    <p class="pd-team-strip"><strong>Core team:</strong> 2 business analysts · 2 .NET front-end developers · 1 SQL Server back-end developer · 1 development lead</p>
+  </div>
+</section>
+
+<!-- ============ NEXT ============ -->
+<section class="pd-section">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Planning a similar rollout?</h2>
+        <p>I lead IT and telecom projects from first workshop to go-live, with operations running the whole way through.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="index.html#contact" class="btn btn-primary">Get in touch</a>
+        <a href="index.html#projects" class="btn btn-ghost">See all projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Antonio Ochoa Cerón — IT Project Manager · Product Owner · Technology Project Leader.
+    Built with <a href="mailto:aochoamx@gmail.com">a human + AI</a> workflow.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle && links) {
+    const setOpen = (open) => {
+      links.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  }
+</script>
+
+</body>
+</html>

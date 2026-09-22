@@ -1,0 +1,447 @@
+/* ============================================================
+   Project detail pages — extends styles.css
+   ============================================================ */
+
+/* ---------- Hero ---------- */
+.pd-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 72px 0 64px;
+  background: radial-gradient(900px 480px at 90% -20%, rgba(167, 139, 250, 0.32), transparent 60%),
+              radial-gradient(800px 460px at 0% 120%, rgba(14, 165, 160, 0.32), transparent 55%),
+              linear-gradient(160deg, var(--navy-900), var(--navy-800) 55%, var(--navy-700));
+}
+.pd-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at 70% 30%, black, transparent 70%);
+  pointer-events: none;
+}
+.pd-hero .container { position: relative; }
+
+.pd-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #b9c6e0;
+  margin-bottom: 28px;
+  transition: color 0.15s ease;
+}
+.pd-back:hover { color: #fff; }
+
+.pd-client {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #dfe8fb;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 6px 12px 6px 6px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+.pd-client img {
+  height: 20px;
+  width: auto;
+  background: #fff;
+  border-radius: 999px;
+  padding: 3px 8px;
+}
+
+.pd-hero h1 {
+  color: #fff;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  max-width: 820px;
+}
+.pd-hero h1 .accent {
+  background: linear-gradient(135deg, var(--cyan-400), var(--blue-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pd-hero .lead {
+  color: #c6d2ea;
+  font-size: 1.06rem;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.pd-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+.pd-stat {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+.pd-stat .num {
+  display: block;
+  font-family: "Sora", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+.pd-stat .lbl {
+  font-size: 0.72rem;
+  color: #9fb0cc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Layout helpers ---------- */
+.pd-section { padding: 80px 0; }
+.pd-section.alt { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.pd-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+.pd-split.reverse { grid-template-columns: 0.9fr 1.1fr; }
+.pd-prose p { color: var(--text-muted); }
+.pd-prose p strong { color: var(--navy-900); }
+
+/* ---------- Figures ---------- */
+.pd-figure {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.pd-figure img { width: 100%; height: auto; }
+.pd-figure.pad { padding: 28px; }
+.pd-figure.pad img { margin: 0 auto; }
+.pd-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  padding: 12px 18px 14px;
+  border-top: 1px solid var(--border);
+  background: #fafbfd;
+}
+.pd-figure.pad figcaption { margin: 22px -28px -28px; }
+
+.pd-browser .bar {
+  display: flex;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #eef1f6;
+  border-bottom: 1px solid var(--border);
+}
+.pd-browser .bar span { width: 10px; height: 10px; border-radius: 50%; background: #cfd6e2; }
+
+/* ---------- Summary cards (challenge / approach / role) ---------- */
+.pd-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.pd-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+}
+.pd-card .ico {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(14, 165, 160, 0.1);
+  color: var(--blue-500);
+  margin-bottom: 14px;
+}
+.pd-card h3 { font-size: 1.02rem; margin-bottom: 6px; }
+.pd-card p { font-size: 0.9rem; color: var(--text-muted); margin: 0; }
+
+/* ---------- Event flow ---------- */
+.pd-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  counter-reset: step;
+}
+.pd-flow-step {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 18px 18px;
+  box-shadow: var(--shadow-sm);
+}
+.pd-flow-step::after {
+  content: "";
+  position: absolute;
+  top: 34px; right: -12px;
+  width: 10px; height: 10px;
+  border-top: 2px solid var(--blue-500);
+  border-right: 2px solid var(--blue-500);
+  transform: rotate(45deg);
+}
+.pd-flow-step:last-child::after { display: none; }
+.pd-flow-step .step-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-500);
+  background: rgba(14, 165, 160, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.pd-flow-step h4 { font-size: 0.95rem; margin-bottom: 8px; }
+.pd-flow-step ul { display: grid; gap: 6px; }
+.pd-flow-step li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding-left: 14px;
+  position: relative;
+}
+.pd-flow-step li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--cyan-400);
+}
+
+/* ---------- Lifecycle timeline ---------- */
+.pd-phases {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 40px;
+}
+.pd-phase {
+  position: relative;
+  text-align: center;
+  padding-top: 38px;
+}
+.pd-phase::before {
+  content: "";
+  position: absolute;
+  top: 13px; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue-500), var(--cyan-400));
+}
+.pd-phase:first-child::before { left: 50%; }
+.pd-phase:last-child::before { right: 50%; }
+.pd-phase .dot {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--blue-500);
+  color: var(--blue-500);
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.pd-phase strong { display: block; font-size: 0.88rem; color: var(--navy-900); }
+.pd-phase span { font-size: 0.76rem; color: var(--text-soft); }
+
+.pd-phase-detail {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+}
+.pd-phase-detail:last-child { border-bottom: 1px solid var(--border); }
+.pd-phase-detail .ph-label {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+.pd-phase-detail .ph-label small {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue-500);
+  margin-bottom: 4px;
+}
+.pd-phase-detail p { color: var(--text-muted); margin-bottom: 0.8em; }
+.pd-phase-detail p:last-child { margin-bottom: 0; }
+.pd-phase-detail .pd-figure { margin-top: 20px; }
+
+.pd-checks { display: grid; gap: 10px; margin: 4px 0 14px; }
+.pd-checks li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+.pd-checks li::before {
+  content: "✓";
+  position: absolute;
+  left: 0; top: 1px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: rgba(14, 165, 160, 0.12);
+  color: var(--blue-500);
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.pd-checks li strong { color: var(--navy-900); }
+
+.pd-highlight {
+  font-size: 0.88rem;
+  background: #f0faf8;
+  border-left: 3px solid var(--blue-500);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  color: var(--text);
+  margin-top: 14px;
+}
+
+/* ---------- Test matrix table ---------- */
+.pd-table-wrap { overflow-x: auto; }
+.pd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  min-width: 520px;
+}
+.pd-table th {
+  text-align: left;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  background: #fafbfd;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.pd-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.pd-table tr:last-child td { border-bottom: none; }
+.pd-table td:first-child { font-weight: 700; color: var(--navy-900); white-space: nowrap; }
+.pd-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(14, 165, 160, 0.1);
+  color: var(--blue-500);
+  white-space: nowrap;
+}
+
+/* ---------- Rollout diagram ---------- */
+.pd-diagram {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 28px;
+}
+.pd-diagram svg { width: 100%; height: auto; display: block; }
+.pd-diagram figcaption { font-size: 0.8rem; color: var(--text-soft); margin-top: 14px; }
+
+/* ---------- Tools & techniques ---------- */
+.pd-toolkit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.pd-tool-group {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+}
+.pd-tool-group .step-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-500);
+  background: rgba(14, 165, 160, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.pd-tool-group ul { display: grid; gap: 14px; }
+.pd-tool-group li strong { display: block; font-size: 0.92rem; color: var(--navy-900); margin-bottom: 2px; }
+.pd-tool-group li span { display: block; font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; }
+
+.pd-tools { margin-top: 28px; }
+.pd-tools h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-soft); margin-bottom: 12px; }
+
+.pd-team-strip {
+  margin: 28px 0 0;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.pd-team-strip strong { color: var(--navy-900); }
+
+/* ---------- Bottom nav ---------- */
+.pd-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+  .pd-stats { grid-template-columns: repeat(3, 1fr); }
+  .pd-split, .pd-split.reverse { grid-template-columns: 1fr; gap: 32px; }
+  .pd-cards { grid-template-columns: 1fr; }
+  .pd-flow { grid-template-columns: 1fr; }
+  .pd-flow-step::after { top: auto; bottom: -12px; right: 50%; transform: rotate(135deg); }
+  .pd-toolkit { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .pd-phases { grid-template-columns: repeat(3, 1fr); row-gap: 22px; }
+  .pd-phase:nth-child(3)::before { right: 50%; }
+  .pd-phase:nth-child(4)::before { left: 50%; }
+  .pd-phase-detail { grid-template-columns: 1fr; gap: 12px; }
+}
+
+@media (max-width: 560px) {
+  .pd-hero { padding: 48px 0 44px; }
+  .pd-section { padding: 60px 0; }
+  .pd-stats { grid-template-columns: repeat(2, 1fr); }
+  .pd-toolkit { grid-template-columns: 1fr; }
+  .pd-diagram, .pd-figure.pad { padding: 18px; }
+  .pd-figure.pad figcaption { margin: 18px -18px -18px; }
+}
+
+/* Let grid children shrink so wide tables/diagrams scroll inside their wrapper, not the page */
+.pd-split > *, .pd-phase-detail > *, .pd-cards > *, .pd-flow > * { min-width: 0; }
+.pd-figure.narrow { max-width: 720px; }
