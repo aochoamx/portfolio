@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMEX M&amp;R — Container Maintenance &amp; SAP Integration | Antonio Ochoa</title>
+<meta name="description" content="Case study: integrating Ferromex's container Maintenance &amp; Repair system with SAP inventory and sales orders through web services. $180K budget, 10 months, delivered 2023–2024.">
+<link rel="canonical" href="https://portfolio.aochoamx.workers.dev/simex-mr">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://portfolio.aochoamx.workers.dev/simex-mr">
+<meta property="og:title" content="SIMEX M&amp;R — Container Maintenance &amp; SAP Integration | Antonio Ochoa">
+<meta property="og:description" content="Integrating Ferromex's container Maintenance &amp; Repair system with SAP inventory and sales orders through web services.">
+<meta property="og:image" content="https://portfolio.aochoamx.workers.dev/images/project-simex-mr.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AO</span>
+      <span class="brand-text">
+        <span class="brand-name">Antonio Ochoa</span>
+        <span class="brand-tag">Project Portfolio</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="index.html#profile">Profile</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#certifications">Certifications</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="docs/Portafolio%20Antonio%20Ochoa%20-%20EN.pdf" class="btn btn-primary" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> <span class="btn-label">Download Portfolio</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="pd-hero">
+  <div class="container">
+    <a href="index.html#projects" class="pd-back">← Back to projects</a>
+    <div class="pd-split">
+      <div>
+        <span class="pd-client"><img src="images/logo-grupo-mexico.png" alt="Grupo México Transportes">GMXT · Ferromex · Case study</span>
+        <h1>SIMEX M&amp;R — <span class="accent">Container Maintenance &amp; SAP Integration</span></h1>
+        <p class="lead">
+          Connecting Ferromex's container Maintenance &amp; Repair system with SAP, so every approved
+          repair generates its sales order automatically, draws its materials from inventory and ties
+          its cost to the revenue it produces.
+        </p>
+      </div>
+      <figure class="pd-figure pad">
+        <svg viewBox="0 0 460 150" role="img" aria-labelledby="hero-fig-title">
+          <title id="hero-fig-title">SIMEX M&amp;R and SAP exchanging data through web services</title>
+          <defs>
+            <linearGradient id="g-hero" x1="0" x2="1">
+              <stop offset="0" stop-color="#0ea5a0"/><stop offset="1" stop-color="#a78bfa"/>
+            </linearGradient>
+            <marker id="arr-hero" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#7a8ba0"/>
+            </marker>
+          </defs>
+          <g font-family="Inter, sans-serif" text-anchor="middle">
+            <rect x="8" y="36" width="140" height="78" rx="14" fill="url(#g-hero)"/>
+            <text x="78" y="72" font-size="17" font-weight="800" fill="#fff">SIMEX M&amp;R</text>
+            <text x="78" y="93" font-size="11.5" fill="#fff">Repairs &amp; quotations</text>
+
+            <line x1="155" y1="75" x2="181" y2="75" stroke="#7a8ba0" stroke-width="1.5" marker-start="url(#arr-hero)" marker-end="url(#arr-hero)"/>
+            <rect x="188" y="56" width="84" height="38" rx="19" fill="#fff" stroke="#0ea5a0" stroke-width="1.5"/>
+            <text x="230" y="72" font-size="10.5" font-weight="700" fill="#0e7c78">Web</text>
+            <text x="230" y="86" font-size="10.5" font-weight="700" fill="#0e7c78">services</text>
+            <line x1="279" y1="75" x2="305" y2="75" stroke="#7a8ba0" stroke-width="1.5" marker-start="url(#arr-hero)" marker-end="url(#arr-hero)"/>
+
+            <rect x="312" y="36" width="140" height="78" rx="14" fill="#1c1830"/>
+            <text x="382" y="72" font-size="17" font-weight="800" fill="#fff">SAP</text>
+            <text x="382" y="93" font-size="11" fill="#c6d2ea">Inventory &amp; sales orders</text>
+          </g>
+        </svg>
+        <figcaption>Two systems, one repair flow, connected by web services.</figcaption>
+      </figure>
+    </div>
+
+    <div class="pd-stats" style="margin-top:44px;">
+      <div class="pd-stat"><span class="num">$180K</span><span class="lbl">Budget (USD)</span></div>
+      <div class="pd-stat"><span class="num">10 months</span><span class="lbl">Duration</span></div>
+      <div class="pd-stat"><span class="num">6</span><span class="lbl">Locations served</span></div>
+      <div class="pd-stat"><span class="num">8</span><span class="lbl">Core team members</span></div>
+      <div class="pd-stat"><span class="num">2023–24</span><span class="lbl">Delivered</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="pd-section">
+  <div class="container">
+    <div class="pd-split">
+      <div class="pd-prose">
+        <span class="section-label">Overview</span>
+        <h2 class="section-title">From damage report to sales order, automatically</h2>
+        <p>
+          When a container is damaged during rail transport, Ferromex offers its owner a
+          <strong>repair service</strong>. Terminal staff inspect the unit, record the damage in
+          SIMEX M&amp;R and send the customer a quotation with the materials and services required.
+        </p>
+        <p>
+          The project adapted <strong>SAP and the existing M&amp;R system</strong>, which serves
+          6 locations nationwide, to automate that process end to end:
+        </p>
+        <ul class="pd-checks">
+          <li><strong>Materials under inventory control:</strong> repair materials and their costs are tracked in SAP.</li>
+          <li><strong>Automatic sales orders:</strong> the sales order for each repair is generated and recorded from the M&amp;R system.</li>
+          <li><strong>Reporting in both systems:</strong> reports that match repair costs against repair revenue.</li>
+        </ul>
+      </div>
+      <figure class="pd-figure pd-browser">
+        <div class="bar"><span></span><span></span><span></span></div>
+        <img src="images/simex-mr-quotations.png" alt="Screenshot of the repair quotation module listing repair line items with photo evidence of the damage" width="708" height="270" loading="lazy">
+        <figcaption>Repair quotation module: every line item is backed by photo evidence of the damage.</figcaption>
+      </figure>
+    </div>
+
+    <div class="pd-cards" style="margin-top:56px;">
+      <div class="pd-card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>The challenge</h3>
+        <p>The technical complexity of integrating SAP with a web application, and of testing it:
+          two systems and two teams behind a single business process.</p>
+      </div>
+      <div class="pd-card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>The approach</h3>
+        <p>One analysis document for both systems, two development tracks running in parallel, then
+          dedicated integration and end-to-end testing phases before a controlled release.</p>
+      </div>
+      <div class="pd-card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>My role</h3>
+        <p>Project Manager, responsible for planning, budget and coordination of the SAP and M&amp;R
+          teams. A software development background helped me bridge both technical sides.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPAIR FLOW & ARCHITECTURE ============ -->
+<section class="pd-section alt">
+  <div class="container">
+    <span class="section-label">Scope</span>
+    <h2 class="section-title">One repair, two systems, five steps</h2>
+    <p class="section-intro">
+      Analysis followed a repair from the moment the damage is spotted to the moment its cost and
+      its revenue meet in SAP.
+    </p>
+
+    <div class="pd-flow">
+      <div class="pd-flow-step">
+        <span class="step-tag">01 · Terminal</span>
+        <h4>Inspection</h4>
+        <ul>
+          <li>Visual inspection of the container</li>
+          <li>Damage captured on site</li>
+          <li>Photo evidence</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">02 · SIMEX M&amp;R</span>
+        <h4>Quotation</h4>
+        <ul>
+          <li>Materials and services</li>
+          <li>Rates by customer and location</li>
+          <li>Sent to the customer by email</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">03 · Customer</span>
+        <h4>Approval</h4>
+        <ul>
+          <li>Online review of quotation and photos</li>
+          <li>Full or partial acceptance</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">04 · M&amp;R → SAP</span>
+        <h4>Work order</h4>
+        <ul>
+          <li>Work order created in SIMEX M&amp;R</li>
+          <li>Sales order generated in SAP</li>
+        </ul>
+      </div>
+      <div class="pd-flow-step">
+        <span class="step-tag">05 · SAP</span>
+        <h4>Materials &amp; cost</h4>
+        <ul>
+          <li>Materials issued from inventory</li>
+          <li>Cost linked to repair revenue</li>
+          <li>Reports for Finance</li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="pd-diagram" style="margin:48px 0 0;">
+      <div class="pd-table-wrap">
+        <svg viewBox="0 0 1000 370" role="img" aria-labelledby="arch-title" style="min-width:720px;">
+          <title id="arch-title">Solution architecture: customers reach SIMEX M&amp;R over the internet. Inside the corporate network, web service interfaces connect SIMEX M&amp;R with SAP, which feeds cost versus revenue reports to Finance.</title>
+          <defs>
+            <linearGradient id="g-mr" x1="0" x2="1">
+              <stop offset="0" stop-color="#0ea5a0"/><stop offset="1" stop-color="#a78bfa"/>
+            </linearGradient>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#7a8ba0"/>
+            </marker>
+          </defs>
+          <g font-family="Inter, sans-serif" text-anchor="middle">
+            <!-- corporate network -->
+            <rect x="318" y="22" width="662" height="330" rx="18" fill="#f3fbfa" stroke="#bfe6e3" stroke-dasharray="6 6"/>
+            <text x="958" y="48" text-anchor="end" font-size="11" font-weight="700" letter-spacing="1.2" fill="#0e7c78">GMXT NETWORK</text>
+
+            <!-- customers -->
+            <rect x="20" y="150" width="150" height="84" rx="12" fill="#fff" stroke="#d5dce8"/>
+            <text x="95" y="188" font-size="14" font-weight="700" fill="#12101c">Customers</text>
+            <text x="95" y="208" font-size="12" fill="#55677c">Container owners</text>
+
+            <!-- internet -->
+            <line x1="176" y1="192" x2="200" y2="192" stroke="#7a8ba0" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+            <rect x="204" y="174" width="84" height="36" rx="18" fill="#fff" stroke="#d5dce8"/>
+            <text x="246" y="196" font-size="12" font-weight="600" fill="#55677c">Internet</text>
+            <line x1="294" y1="192" x2="354" y2="192" stroke="#7a8ba0" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+
+            <!-- administrator -->
+            <rect x="360" y="50" width="210" height="58" rx="12" fill="#fff" stroke="#d5dce8"/>
+            <text x="465" y="75" font-size="13.5" font-weight="700" fill="#12101c">M&amp;R Administrator</text>
+            <text x="465" y="94" font-size="12" fill="#55677c">Rates and quotations</text>
+            <line x1="465" y1="110" x2="465" y2="142" stroke="#7a8ba0" stroke-width="1.5" marker-end="url(#arr)"/>
+
+            <!-- SIMEX M&R -->
+            <rect x="360" y="148" width="210" height="88" rx="14" fill="url(#g-mr)"/>
+            <text x="465" y="188" font-size="18" font-weight="800" fill="#fff">SIMEX M&amp;R</text>
+            <text x="465" y="210" font-size="12" fill="#fff">M&amp;R management app</text>
+
+            <!-- interfaces -->
+            <line x1="576" y1="192" x2="614" y2="192" stroke="#7a8ba0" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+            <rect x="620" y="156" width="140" height="72" rx="12" fill="#fff" stroke="#0ea5a0" stroke-width="1.5"/>
+            <text x="690" y="189" font-size="14" font-weight="700" fill="#12101c">Interfaces</text>
+            <text x="690" y="208" font-size="12" fill="#55677c">Web services</text>
+            <line x1="766" y1="192" x2="794" y2="192" stroke="#7a8ba0" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+
+            <!-- SAP -->
+            <rect x="800" y="148" width="160" height="88" rx="14" fill="#1c1830"/>
+            <text x="880" y="188" font-size="18" font-weight="800" fill="#fff">SAP</text>
+            <text x="880" y="210" font-size="12" fill="#c6d2ea">ERP · Inventory (MM)</text>
+            <line x1="880" y1="238" x2="880" y2="270" stroke="#7a8ba0" stroke-width="1.5" marker-end="url(#arr)"/>
+
+            <!-- finance -->
+            <rect x="800" y="276" width="160" height="58" rx="12" fill="#fff" stroke="#d5dce8"/>
+            <text x="880" y="301" font-size="13.5" font-weight="700" fill="#12101c">Finance</text>
+            <text x="880" y="320" font-size="11.5" fill="#55677c">Cost vs. revenue reports</text>
+
+            <!-- component badges -->
+            <g font-size="12" font-weight="800" fill="#ff6b4a">
+              <circle cx="362" cy="150" r="13" fill="#fff" stroke="#ff6b4a" stroke-width="2"/><text x="362" y="154.5">1</text>
+              <circle cx="802" cy="150" r="13" fill="#fff" stroke="#ff6b4a" stroke-width="2"/><text x="802" y="154.5">2</text>
+              <circle cx="622" cy="158" r="13" fill="#fff" stroke="#ff6b4a" stroke-width="2"/><text x="622" y="162.5">3</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Solution architecture: three components to build, numbered as in the cards below.</figcaption>
+    </figure>
+
+    <div class="pd-cards" style="margin-top:22px;">
+      <div class="pd-card">
+        <div class="ico pd-num">1</div>
+        <h3>SIMEX M&amp;R enhancements</h3>
+        <ul class="pd-checks">
+          <li>Rate management by customer and location</li>
+          <li>Quotation generation and delivery</li>
+          <li>Sales order generation towards SAP</li>
+          <li>Reports for Administration</li>
+        </ul>
+      </div>
+      <div class="pd-card">
+        <div class="ico pd-num">2</div>
+        <h3>SAP enhancements</h3>
+        <ul class="pd-checks">
+          <li>Warehouses created and configured in MM</li>
+          <li>Materials created and configured</li>
+          <li>Reports for Finance</li>
+        </ul>
+      </div>
+      <div class="pd-card">
+        <div class="ico pd-num">3</div>
+        <h3>Interfaces</h3>
+        <ul class="pd-checks">
+          <li>Web service to query material stock by location</li>
+          <li>Web service to issue materials against a work order</li>
+          <li>Web service to generate the sales order and work order</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DELIVERY ============ -->
+<section class="pd-section">
+  <div class="container">
+    <span class="section-label">Delivery</span>
+    <h2 class="section-title">How the project was delivered</h2>
+    <p class="section-intro">
+      A hybrid lifecycle with one particularity: two development tracks, one per system, converging
+      in a dedicated integration phase.
+    </p>
+
+    <div class="pd-phases cols-7" aria-hidden="true">
+      <div class="pd-phase"><span class="dot">1</span><strong>Initiation</strong><span>Plan &amp; baseline</span></div>
+      <div class="pd-phase"><span class="dot">2</span><strong>Analysis</strong><span>Process &amp; specs</span></div>
+      <div class="pd-phase"><span class="dot">3</span><strong>Planning</strong><span>Two tracks</span></div>
+      <div class="pd-phase"><span class="dot">4</span><strong>Development</strong><span>Sprints</span></div>
+      <div class="pd-phase"><span class="dot">5</span><strong>Testing</strong><span>End-to-end UAT</span></div>
+      <div class="pd-phase"><span class="dot">6</span><strong>Deployment</strong><span>Controlled release</span></div>
+      <div class="pd-phase"><span class="dot">7</span><strong>Hypercare</strong><span>Hours bank</span></div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 1</small>Initiation</div>
+      <div>
+        <p>Initial planning produced a high-level, phased development roadmap together with time,
+          scope and cost estimates, which became the baseline for the rest of the project.</p>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 2</small>Analysis &amp; design</div>
+      <div>
+        <p>The analysis covered both systems. <strong>SAP</strong> had to be modified so that repair
+          materials could be inventoried from the moment Procurement buys them, and so that sales
+          orders could be generated automatically from the M&amp;R system.
+          <strong>SIMEX M&amp;R</strong> had to be modified to connect to SAP through web services and
+          create the sales orders tied to each repair.</p>
+        <p>The business process was modeled end to end: inspection, quotation, customer acceptance
+          (full or partial), work order, sales order and materials issue. Everything was consolidated
+          into a single analysis document containing, for each system:</p>
+        <ul class="pd-checks">
+          <li><strong>Screens</strong> for every new or modified function.</li>
+          <li><strong>Web service specifications</strong> for each interface between SIMEX M&amp;R and SAP.</li>
+        </ul>
+        <figure class="pd-figure pad narrow" style="max-width:576px;">
+          <img src="images/simex-mr-damage-capture.png" alt="Two mobile screens for capturing container damage: section, component, damage type and location on the left, repair method, quantity and dimensions on the right" width="520" height="368" loading="lazy">
+          <figcaption>Responsive interface for capturing container damage at the terminal.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 3</small>Planning</div>
+      <div>
+        <p>This project had a particular shape: <strong>two developments running in parallel</strong>,
+          one for the SAP scope and one for the existing M&amp;R system, followed by an integration
+          phase, an end-to-end testing phase and finally a release phase.</p>
+        <figure class="pd-diagram" style="margin:20px 0 0;">
+          <div class="pd-table-wrap">
+            <svg viewBox="0 0 980 280" role="img" aria-labelledby="plan-title" style="min-width:680px;">
+              <title id="plan-title">Delivery plan: SAP and SIMEX M&amp;R development tracks run in parallel, followed by integration, end-to-end testing and release</title>
+              <defs>
+                <linearGradient id="g-plan" x1="0" x2="1">
+                  <stop offset="0" stop-color="#0ea5a0"/><stop offset="1" stop-color="#a78bfa"/>
+                </linearGradient>
+              </defs>
+              <g font-family="Inter, sans-serif" font-size="13" font-weight="600">
+                <line x1="560" y1="34" x2="560" y2="268" stroke="#7a8ba0" stroke-width="1.5" stroke-dasharray="5 5"/>
+                <text x="40" y="24" fill="#55677c">Parallel development</text>
+                <text x="560" y="24" text-anchor="middle" fill="#55677c">Both tracks complete</text>
+
+                <rect x="40" y="46" width="520" height="30" rx="8" fill="#e8f7f6"/>
+                <text x="54" y="66" fill="#0e7c78">SAP track: MM configuration and web services</text>
+
+                <rect x="40" y="92" width="520" height="30" rx="8" fill="#efe9fe"/>
+                <text x="54" y="112" fill="#6d28d9">SIMEX M&amp;R track: rates, quotations, sales orders, reports</text>
+
+                <rect x="560" y="138" width="140" height="30" rx="8" fill="url(#g-plan)"/>
+                <text x="574" y="158" fill="#fff">Integration</text>
+
+                <rect x="700" y="184" width="150" height="30" rx="8" fill="#e4e9f1"/>
+                <text x="714" y="204" fill="#55677c">End-to-end testing</text>
+
+                <rect x="850" y="230" width="90" height="30" rx="8" fill="#fff" stroke="#ff6b4a" stroke-width="1.5"/>
+                <text x="895" y="250" text-anchor="middle" fill="#ff6b4a" font-weight="700">Release</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption>Delivery plan: the two tracks converge and are tested together before anything reaches the users.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 4</small>Development</div>
+      <div>
+        <p>The analysis document was broken down into user stories in <strong>Jira</strong>, with a
+          development and testing schedule. The teams delivered in sprints, and each sprint closed with
+          user acceptance testing, so issues surfaced early rather than at the end.</p>
+        <p>At the end of development, the team ran internal testing against a structured test matrix.</p>
+        <figure class="pd-figure">
+          <div class="pd-table-wrap">
+            <table class="pd-table">
+              <thead>
+                <tr><th>ID</th><th>Module</th><th>Test scenario</th><th>Result</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>TC-001</td><td>Rates</td><td>Apply the rate configured for the customer and location</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-002</td><td>Quotation</td><td>Send the quotation with damage photos to the customer by email</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-003</td><td>Approval</td><td>Partial acceptance creates a work order only for the accepted items</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-004</td><td>SAP interface</td><td>Query material stock by location</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-005</td><td>SAP interface</td><td>Accepted quotation generates a sales order in SAP</td><td><span class="pd-status">Pass</span></td></tr>
+                <tr><td>TC-006</td><td>SAP interface</td><td>Materials issued against the work order are deducted from inventory</td><td><span class="pd-status">Pass</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption>Illustrative excerpt showing the structure of the test matrix.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 5</small>Testing</div>
+      <div>
+        <p>End-to-end user testing followed, covering the full flow across both systems. Results
+          were documented in a test report submitted to Operations for sign-off, and the requested
+          adjustments were applied before release.</p>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 6</small>Deployment</div>
+      <div>
+        <p>The rollout was designed to protect operations at every step:</p>
+        <ul class="pd-checks">
+          <li><strong>Full user training</strong> on the new system, with visits to the terminals.</li>
+          <li><strong>Controlled release</strong> on a planned cutover date.</li>
+          <li><strong>Parallel run:</strong> both versions of the system stayed live during the transition.</li>
+          <li><strong>Go-live support:</strong> a dedicated team at headquarters and a 24/7 chat channel for
+            Operations, from cutover through the following week.</li>
+        </ul>
+        <figure class="pd-figure pd-browser narrow" style="max-width:552px;">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <img src="images/simex-mr-report.png" alt="Screenshot of the Maintenance and Repair report listing repairs with equipment, status and repair cost, plus buttons for details, purchase order and photos" width="550" height="326" loading="lazy">
+          <figcaption>In production: the repairs and sales orders report.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="pd-phase-detail">
+      <div class="ph-label"><small>Phase 7</small>Hypercare</div>
+      <div>
+        <p>Post-implementation was planned around a pre-approved bank of hours, so adjustments
+          requested after release did not require a new procurement cycle. Remote and on-site
+          training sessions with users continued during this phase to support correct use of the system.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS & TECHNIQUES ============ -->
+<section class="pd-section alt">
+  <div class="container">
+    <span class="section-label">Tools &amp; techniques</span>
+    <h2 class="section-title">The toolkit behind the delivery</h2>
+    <p class="section-intro">Each stage of the project relied on its own set of proven techniques.</p>
+
+    <div class="pd-toolkit">
+      <div class="pd-tool-group">
+        <span class="step-tag">Analysis &amp; design</span>
+        <ul>
+          <li><strong>Process modeling</strong><span>The repair process end to end, from inspection to sales order.</span></li>
+          <li><strong>UX/UI design</strong><span>Screens defined for every new or modified function.</span></li>
+          <li><strong>Interface specifications</strong><span>Each web service between SIMEX M&amp;R and SAP specified before development.</span></li>
+        </ul>
+      </div>
+      <div class="pd-tool-group">
+        <span class="step-tag">Agile delivery</span>
+        <ul>
+          <li><strong>User stories in Jira</strong><span>Derived from the analysis document to keep scope traceable.</span></li>
+          <li><strong>Parallel sprints</strong><span>One track per system, each on its own schedule.</span></li>
+          <li><strong>Sprint-end UAT</strong><span>Users accepted every increment, so issues surfaced early.</span></li>
+        </ul>
+      </div>
+      <div class="pd-tool-group">
+        <span class="step-tag">Quality</span>
+        <ul>
+          <li><strong>Functional testing</strong><span>Internal test cycle at the end of development.</span></li>
+          <li><strong>Test matrix</strong><span>Structured coverage of every module and interface.</span></li>
+          <li><strong>End-to-end UAT sign-off</strong><span>Test report submitted to Operations for approval.</span></li>
+        </ul>
+      </div>
+      <div class="pd-tool-group">
+        <span class="step-tag">Rollout</span>
+        <ul>
+          <li><strong>Cutover planning</strong><span>Controlled release on a set date.</span></li>
+          <li><strong>Parallel run</strong><span>Both versions of the system kept live during adoption.</span></li>
+          <li><strong>Hypercare</strong><span>24/7 support channel, a pre-approved hours bank and follow-up training.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pd-tools">
+      <h3>Technology</h3>
+      <div class="pill-row">
+        <span class="pill">SAP MM</span>
+        <span class="pill">ABAP</span>
+        <span class="pill">Web services</span>
+        <span class="pill">.NET</span>
+        <span class="pill">SQL Server</span>
+        <span class="pill">Jira</span>
+      </div>
+    </div>
+
+    <p class="pd-team-strip"><strong>Core team:</strong> 1 analyst · 2 .NET front-end developers · 1 SQL Server back-end developer · 1 SAP MM functional consultant · 1 ABAP developer · 1 architect · 1 development lead</p>
+  </div>
+</section>
+
+<!-- ============ NEXT ============ -->
+<section class="pd-section">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Connecting SAP to your operations?</h2>
+        <p>I lead IT and telecom projects from first workshop to go-live, with operations running the whole way through.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="index.html#contact" class="btn btn-primary">Get in touch</a>
+        <a href="index.html#projects" class="btn btn-ghost">See all projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Antonio Ochoa Cerón — IT Project Manager · Product Owner · Technology Project Leader.
+    Built with <a href="mailto:aochoamx@gmail.com">a human + AI</a> workflow.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle && links) {
+    const setOpen = (open) => {
+      links.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  }
+</script>
+
+</body>
+</html>

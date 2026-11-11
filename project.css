@@ -445,3 +445,18 @@
 /* Let grid children shrink so wide tables/diagrams scroll inside their wrapper, not the page */
 .pd-split > *, .pd-phase-detail > *, .pd-cards > *, .pd-flow > * { min-width: 0; }
 .pd-figure.narrow { max-width: 720px; }
+
+/* ---------- Additions for pages with inline SVG figures, numbered cards and 7 phases ---------- */
+.pd-figure svg { width: 100%; height: auto; display: block; }
+.pd-card .pd-num { font-family: "Sora", sans-serif; font-weight: 700; font-size: 1rem; }
+.pd-card .pd-checks { margin: 12px 0 0; }
+.pd-card .pd-checks li { font-size: 0.88rem; }
+
+.pd-phases.cols-7 { grid-template-columns: repeat(7, 1fr); }
+@media (max-width: 820px) {
+  .pd-phases.cols-7 { grid-template-columns: repeat(3, 1fr); row-gap: 22px; }
+  .pd-phases.cols-7 .pd-phase:nth-child(3)::before,
+  .pd-phases.cols-7 .pd-phase:nth-child(6)::before { right: 50%; }
+  .pd-phases.cols-7 .pd-phase:nth-child(4)::before { left: 50%; }
+  .pd-phases.cols-7 .pd-phase:nth-child(7)::before { display: none; }
+}
